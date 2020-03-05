@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Python Poll</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.poll-member h1 {
+			cursor: pointer
+		}
+
+    .percentageBarParent{
+      height: 22px;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    .percentageBar {
+      height: 20px;
+      width: 0%;
+    }
+	</style>
+</head>
+<body>
+	<div class="main">
+      <div class="container">
+        <h1>Who do you want for President in 2020?</h1>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="poll-member Bocchie">
+                <h1>Bocchie&nbsp;&nbsp;</h1>
+                <div class="percentageBarParent">
+                <div class="percentageBar" id="Bocchie"></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="poll-member Alec Baldwin as Trump">
+                <h1>Alec Baldwin as Trump&nbsp;&nbsp;</h1> 
+                <div class="percentageBarParent">
+                <div class="percentageBar" id="Alec Baldwin as Trump"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="poll-member Lisa Vanderpump">
+                <h1>Lisa Vanderpump&nbsp;&nbsp;</h1> 
+                <div class="percentageBarParent">
+                <div class="percentageBar" id="Lisa Vanderpump"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="poll-member Hytham">
+                <h1>Hytham&nbsp;&nbsp;</h1> 
+                <div class="percentageBarParent">
+                <div class="percentageBar" id="Hytham"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://js.pusher.com/5.1/pusher.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}" defer></script>
+
+</body>
+</html>
